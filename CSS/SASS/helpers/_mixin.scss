@@ -1,0 +1,39 @@
+
+//Mixin for ul Reset//
+@mixin ulReset{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+//Mixin for ul Reset//
+
+@mixin overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+
+
+
+// Mixin for Media//
+@mixin MoblieScreen{
+    @media(#{$mobileScreen}){
+        @content;
+}}
+@mixin SmallScreen{
+    @media(#{$smallScreen}){
+        @content;
+}}
+@mixin MediumScreen{
+    @media(#{$mediumScreen}){
+        @content;
+}}
+@mixin LargeScreen{
+    @media(#{$largeScreen}){
+        @content;
+}}
+// Mixin for Media//
